@@ -1,0 +1,28 @@
+// mixins
+@import 'mixins';
+
+// variables
+@import 'variables';
+
+// animations
+@import 'animations';
+
+//grid
+@import 'grid';
+
+// global
+@import 'global';
+
+// @import '~swiper/css/bundle';
+
+// components
+
+@import '../views/components/btn/btn';
+@import '../views/components/title/title';
+@import '../views/components/person/person-image/person-image';
+@import '../views/components/person/person-info/person-info';
+
+// blocks
+@import '../views/blocks/person-card/person-card';
+@import '../views/blocks/social/social';
+

@@ -1,0 +1,3 @@
+mixin title(text, className)
+	- var returnClass = (className != undefined ? 'title ' + className : 'title')
+	h1(class=returnClass)=text

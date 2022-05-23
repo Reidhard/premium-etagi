@@ -1,0 +1,23 @@
+.person-info {
+	margin: -15px 0;
+
+	&__item {
+		padding: 15px 0;
+
+		&:not(:last-of-type) {
+			border-bottom: 1px solid $base2;
+		}
+	}
+	
+	&__name {
+		font-family: $jost;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	&__text {
+		margin-top: 8px;
+	}
+}

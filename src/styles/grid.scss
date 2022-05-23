@@ -1,0 +1,28 @@
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	box-sizing: border-box;
+
+	@media (min-width: $xs) {
+		max-width: 100%;
+	}
+	@media (min-width: $sm) {
+		max-width: 798px;
+	}
+	@media (min-width: $md) {
+		max-width: 798px;
+	}
+	@media (min-width: $lg) {
+		max-width: 798px;
+	}
+}
+  
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}

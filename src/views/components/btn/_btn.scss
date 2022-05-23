@@ -1,0 +1,91 @@
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 15px 47px;
+
+	font-size: 16px;
+	line-height: 24px;
+
+	border: 1px solid transparent;
+	border-radius: 32px;
+
+	@media (max-width: $sm) {
+		padding: 10px 15px;
+
+		font-size: 14px;
+		line-height: 22px;
+	}
+	
+	&--red {
+		color: $white;
+
+		background: $red;
+		border-color: $red;
+
+		&:hover {
+			background: transparent;
+		}
+	}
+
+	&--white {
+		color: $base4;
+
+		background: $white;
+
+		&:hover {
+			color: $white;
+
+			background: transparent;
+			border-color: $white;
+
+			.svg-icon {
+				color: $white;
+			}
+		}
+	}
+
+	&--bordered-white {
+		color: $base4;
+
+		background: $white;
+		border-color: $base4;
+
+		&:hover {
+			color: $white;
+
+			background: $base4;
+
+			.svg-icon {
+				color: $white;
+			}
+		}
+	}
+
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 8px;
+
+		.svg-icon {
+			width: 24px;
+			height: 24px;
+		}
+	}
+}
+
+.premium-template--red,
+.premium-template--light {
+	.btn--red:hover {
+		color: $white;
+
+		background: $base4;
+		border-color: $base4;
+
+		.svg-icon {
+			color: $white;
+		}
+	}
+}

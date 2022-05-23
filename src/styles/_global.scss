@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none !important;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	
+	font-family: $roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 22px;
+
+	@media (max-width: $xs) {
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
+
+body {
+	overflow-x: hidden;
+}
+
+
+p {
+	margin: 0 0 18px;
+
+	@media (max-width: $sm) {
+		margin: 0 0 12px;
+	}
+}
+
+a {
+	text-decoration: none;
+
+	transition: all 0.2s ease-in-out;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.page-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+.block {
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.flex-grow {
+	flex-grow: 1;
+}
+
+.flex-shrink-0 {
+	flex-shrink: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.select-none {
+	user-select: none;
+}
+
+.overflow-hidden {
+	overflow: hidden
+}
+
+.object-cover {
+	object-fit: cover
+}
+
+
+.not-active {
+	pointer-events: none;
+	cursor: default;
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+.premium-template {
+	&--dark {
+		color: $white;
+		background: $darkGray;
+	}
+
+	&--red {
+		color: $base4;
+		background: $base2;
+	}
+
+	&--light {
+		color: $base4;
+		background: $base2;
+	}
+}
+
+.svg-icon {
+	transition: all 0.2s ease-in-out;
+}

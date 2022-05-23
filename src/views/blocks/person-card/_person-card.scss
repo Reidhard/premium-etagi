@@ -1,0 +1,133 @@
+.card {
+	&--dark &__head {
+		color: $white;
+	}
+
+	&--red &__head {
+		color: $white;
+	}
+
+	&--light &__head {
+		color: $base4;
+	}
+
+	&__head {
+		position: relative;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 56px 15px 24px;
+
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 0px 0px 16px 16px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: 2;
+
+			width: 84px;
+			height: 84px;
+
+			background-image: url('../images/card-head-bg.png');
+		}
+	}
+
+	&--dark &__head {
+		background-color: $gray;
+		background-image: url('../images/card-bg.png');
+	}
+
+	&--red &__head {
+		color: $white;
+		background-color: $red-bg;
+		background-image: url('../images/card-bg-light-red.png');
+	}
+
+	&--light &__head {
+		background-color: $white;
+		background-image: url('../images/card-bg-light-red.png');
+	}
+
+	&__logo {
+		position: absolute;
+		top: 16px;
+		left: 15px;
+	}
+
+	&__body {
+		margin-top: 24px;
+		padding: 24px 15px;
+
+		border-radius: 16px 16px 0px 0px;
+
+		@media (max-width: $xs) {
+			margin-top: 15px;
+		}
+	}
+
+	&--dark &__body {
+		background-color: $gray;
+	}
+
+	&--red &__body {
+		background-color: $white;
+	}
+
+	&--light &__body {
+		background-color: $white;
+	}
+}
+
+.person {
+	
+	&__name {
+		margin-top: 8px;
+
+		font-family: $jost;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 32px;
+		text-align: center;
+
+		@media (max-width: $xs) {
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+
+	&__position {
+		margin-top: 4px;
+	}
+
+	&__social {
+		margin-top: 24px;
+	}
+
+	&__btn {
+		margin-top: 24px;
+	}
+
+	&__btn-wrap {
+		margin: -16px 0;
+
+		@media (max-width: $sm) {
+			margin: -10px 0;
+		}
+	}
+
+	&__btn-item {
+		margin: 16px 0;
+		
+		@media (max-width: $sm) {
+			margin: 10px 0;
+		}
+	}
+}

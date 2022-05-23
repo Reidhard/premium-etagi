@@ -1,0 +1,4 @@
+mixin person-image(src, className)
+	- var returnClass = (className != undefined ? 'person-avatar ' + className : 'person-avatar')
+	div(class=returnClass)
+		+image(src)

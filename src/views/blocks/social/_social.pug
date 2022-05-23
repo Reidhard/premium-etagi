@@ -1,0 +1,13 @@
+mixin social(data, className, theme)
+	if theme == 'dark'
+		- var returnClass = (className != undefined ? 'social social--dark ' + className : 'social social--dark')
+	else if theme == 'red'
+		- var returnClass = (className != undefined ? 'social social--red ' + className : 'social social--red')
+	else if theme == 'light'
+		- var returnClass = (className != undefined ? 'social social--light ' + className : 'social social--light')
+	div(class=returnClass)
+		.social__list 
+			each item in data
+				a(href=item.link).social__item
+					svg.svg-icon
+						use(xlink:href="images/icon/icon-sprites.svg#"+item.name)

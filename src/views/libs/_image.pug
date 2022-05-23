@@ -1,0 +1,4 @@
+mixin image(image)
+	picture
+		source(srcset=require(`/images/${image}`))
+		img(src=require(`/images/${image}`) class=className)

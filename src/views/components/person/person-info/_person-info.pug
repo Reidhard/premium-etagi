@@ -1,0 +1,7 @@
+mixin person-info(data, className)
+	- var returnClass = (className != undefined ? 'person-info ' + className : 'person-info')
+	div(class=returnClass)
+		each item in data
+			.person-info__item
+				.person-info__name=item.name
+				.person-info__text=item.text

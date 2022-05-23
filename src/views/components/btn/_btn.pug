@@ -1,0 +1,14 @@
+mixin btn(type, link, text, icon, className)
+	- var returnClass = (className != undefined ? 'btn ' + className : 'btn')
+	if type == 'btn'
+		button(class=returnClass)
+			span.icon 
+				svg.svg-icon
+					use(xlink:href="images/icon/icon-sprites.svg#"+icon)
+			span.text=text
+	else if type == 'a'
+		a(href=link class=returnClass)
+			.btn__icon 
+				svg.svg-icon
+					use(xlink:href="images/icon/icon-sprites.svg#"+icon)
+			.btn__text=text

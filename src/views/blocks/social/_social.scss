@@ -1,0 +1,107 @@
+.social {
+	width: 100%;
+
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 -5px;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 50px;
+		margin: 0 5px;
+		padding: 12px 44.33px;
+
+		background: $base5;
+		border: 1px solid $base4;
+		border-radius: 32px;
+
+		@media (max-width: $md) {
+			width: calc(100% / 6 - 10px);
+			padding: 12px;
+
+		}
+
+		@media (max-width: $ss) {
+			width: 40px;
+			height: 40px;
+			padding: 8px;
+		}
+
+		@media (max-width: $xs) {
+			width: 30px;
+			height: 30px;
+			padding: 5px;
+		}
+
+		&:hover {
+			background: $base4;
+		}
+
+		.svg-icon {
+			width: 24px;
+			height: 24px;
+
+			color: $white;
+		}
+	}
+
+
+	&--dark &__item {
+		background: $base5;
+		border-color: $base5;
+
+		&:hover {
+			background: $base4;
+			border-color: $base4;
+
+			.svg-icon {
+				color: $white;
+			}
+		}
+	}
+
+	&--dark .svg-icon {
+		color: $white;
+
+	}
+
+	&--red &__item {
+		background: $white;
+		border-color: $white;
+
+		&:hover {
+			background: $base4;
+			border-color: $base4;
+
+			.svg-icon {
+				color: $white;
+			}
+		}
+	}
+
+	&--red .svg-icon {
+		color: $base4;
+	}
+
+	&--light &__item {
+		background: $white;
+		border-color: $base4;
+
+		&:hover {
+			background: $base4;
+
+			.svg-icon {
+				color: $white;
+			}
+		}
+	}
+
+	&--light .svg-icon {
+		color: $base4;
+	}
+}
